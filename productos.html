@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="Imagenes/supermarkets2.webp" alt="" />
+      <nav class="navbar">
+        <a href="./index.html"><h1>Home</h1></a>
+        <a href="./productos.html"><h1>Nuestros Productos</h1></a>
+        <a href="./Form.html"><h1>Contacto</h1> </a>
+      </nav>
+    </header>
+
+    <div class="containerFormProductos">
+      <!-- DIV PARA APLICAR EL GRID: CONTENEDOR DE PRODUCTOS -->
+      <form
+        id="contenedor-productos"
+        style="
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          gap: 20px;
+        "
+        action=""
+        name="form"
+      ></form>
+
+      <div class="msj"><h3 id="mensaje"></h3></div>
+      <button class="button" id="btn" type="submit">Comprar</button>
+    </div>
+    <footer>
+      <div class="footer-container">
+          <div class="footer-section">
+              <h4>Contactanos</h4>
+              <p>Email: info@supertito.com</p>
+              <p>Teléfono: (2284) 1234567</p>
+          </div>
+        
+          <div class="footer-section">
+              <h4>Nuestras redes</h4>
+              <a href="https://facebook.com/tuempresa">Facebook</a>
+              <a href="https://twitter.com/tuempresa">Twitter</a>
+              <a href="https://instagram.com/tuempresa">Instagram</a>
+          </div>
+          <div class="footer-section">
+              <p>&copy; 2024 Supermercado "Tito" Todos los derechos reservados.</p>
+          </div>
+      </div>
+  </footer>
+  </body>
+  <script src="productos.js"></script>
+</html>
