@@ -50,9 +50,9 @@ const respuestaClick = function (Event) {
     }
 };
 
-const container = document.getElementById("contenedor-productos");
 
-const colorearInput = (id) => {
+
+const asignarKeyup = (id) => {
     const input = document.getElementById(id);
     input.addEventListener("keyup", function (e) {
         let stockActual = productos[id][2]
@@ -67,31 +67,30 @@ const colorearInput = (id) => {
 
     });
 };
-const lista = document.getElementById("lista");
-productos.forEach((producto, indice) => {
+//obtengo el contenedor de productos de DOM(form)
+const container = document.getElementById("contenedor-productos");
+
+productos.forEach((producto, nroFila) => {
 
 
     const contenedorProducto = document.createElement("div");
     contenedorProducto.classList.add("contenedor-producto");
-
+    //genero el contenido de cada carta de producto
     contenedorProducto.innerHTML = `
   <img src="${producto[3]}" alt="arroz" width="100%" height="160px"> </img>
   <h1 class="tituloProducto">${producto[0]}</h1>
     <p >Precio : $<span style="font-weight: bold;">${producto[1]}<span></p>
-    <p name="stock">Stock : <span style="font-weight: bold;" id="stock-${indice}">${producto[2]}<span></p>
-    <input placeholder="Ingrese un numero" type="number" name="inpCantCompra" id="${indice}" />
+    <p name="stock">Stock : <span style="font-weight: bold;" id="stock-${nroFila}">${producto[2]}<span></p>
+    <input placeholder="Ingrese un numero" type="number" name="inpCantCompra" id="${nroFila}" />
   `;
-
+    // genero card de productos, cada uno como elemento hijo de container
     container.appendChild(contenedorProducto);
 
-    colorearInput(indice);
+    asignarKeyup(nroFila);
 });
 
-const inputs = document.getElementsByTagName("input");
-
-const inputs2 = document.querySelector("input");
-
 let btn = document.getElementById("btn");
+
 btn.addEventListener("click", respuestaClick);
-const buttons = document.querySelectorAll("button");
+
 

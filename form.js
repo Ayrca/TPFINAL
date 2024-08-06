@@ -1,4 +1,4 @@
-
+//utilizo libreria filesaver para utilizar el objeto blob
 let nombre = document.getElementById("nombre");
 let apellido = document.getElementById("apellido");
 let email = document.getElementById("email");
