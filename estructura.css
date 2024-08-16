@@ -21,7 +21,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-image: url('./Imagenes/supermarkets2.webp'); /* Cambia la ruta a tu imagen */
+    background-image: url('./Imagenes/supermarkets2.webp');
     background-size: cover; /* Para que la imagen cubra todo el navbar */
     background-position: center; /* Centrar la imagen */
     padding: 10px 0; /* Espaciado superior e inferior */
