@@ -5,33 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Productos</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./productos.css" />
+    <link rel="stylesheet" href="estructura.css">
   </head>
   <body>
     <header>
-      <img src="Imagenes/supermarkets2.webp" alt="" />
+      <div class="header">
       <nav class="navbar">
-        <a href="./index.html"><h1>Home</h1></a>
-        <a href="./productos.html"><h1>Nuestros Productos</h1></a>
-        <a href="./Form.html"><h1>Contacto</h1> </a>
-      </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./Form.html">Contacto</a></li>
+            
+        </ul>
+    </nav></div>
     </header>
 
     <div class="containerFormProductos">
       <!-- DIV PARA APLICAR EL GRID: CONTENEDOR DE PRODUCTOS -->
-      <form
+      <form class="contenedorProductos"
         id="contenedor-productos"
-        style="
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          grid-template-rows: repeat(3, 1fr);
-          gap: 20px;
-        "
         action=""
         name="form"
-      ></form>
+      >
+    </form>
 
       <div class="msj"><h3 id="mensaje"></h3></div>
-      <button class="button" id="btn" type="submit">Comprar</button>
+      <button class="buttonProducts" id="btn" type="submit">Comprar</button>
     </div>
     <footer>
       <div class="footer-container">
@@ -54,4 +59,5 @@
   </footer>
   </body>
   <script src="productos.js"></script>
+  <script src="./main.js"></script>
 </html>

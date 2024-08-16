@@ -6,13 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="estructura.css">
+ 
 </head>
 
 <body>
   <header>
-    <img src="Imagenes/supermarkets2.webp" alt="">
+    <div class="header">
+    <!--
+   <img src="Imagenes/supermarkets2.webp" alt="">
+     
+    
     <nav class="navbar">
-
+      
       <a href="./index.html">
         <h1>Home</h1>
       </a>
@@ -23,6 +29,22 @@
         <h1>Contacto</h1>
       </a>
     </nav>
+  -->
+    <nav class="navbar">
+      <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+      <ul class="nav-list">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="./Form.html">Contacto</a></li>
+          
+      </ul>
+  </nav>
+
+    </div>
   </header>
   <div class="contenedor-pagina-principal">
 
@@ -39,16 +61,8 @@
         vecinos
         lo mejor que la tierra tiene para ofrecer.
 
-        Desde nuestros comienzos, hemos recorrido un largo camino, eligiendo a mano cada fruta, verdura y producto local
-        para garantizar que cada compra sea una experiencia deliciosa y nutritiva. Creemos que la alimentación es la
-        base
-        de una vida sana, y es por eso que trabajamos día a día para ofrecerles productos frescos, orgánicos y de alta
-        calidad a precios accesibles.
-
-        En Supermercado Tito, cada cliente es parte de nuestra familia. Queremos que cada visita sea especial,
-        por eso hemos creado un ambiente cálido y acogedor, donde puedas encontrar no solo lo que necesitas, sino
-        también
-        inspiración para tus comidas y momentos de felicidad.
+        <br>
+        <br>
 
         ¡Únete a nosotros en este viaje hacia un estilo de vida más saludable! Descubre todo lo que tenemos para
         ofrecer:
@@ -61,8 +75,8 @@
     </div>
   </div>
   </div>
-  <footer>
-    <div class="footer-container">
+  <footer class="footer-container">
+    
       <div class="footer-section">
           <h4>Contactanos</h4>
           <p>Email: info@supertito.com</p>
@@ -78,7 +92,7 @@
       <div class="footer-section">
           <p>&copy; 2024 Supermercado "Tito" Todos los derechos reservados.</p>
       </div>
-  </div>
+  
   </footer>
 
 

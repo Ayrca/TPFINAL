@@ -77,11 +77,11 @@ productos.forEach((producto, nroFila) => {
     contenedorProducto.classList.add("contenedor-producto");
     //genero el contenido de cada carta de producto
     contenedorProducto.innerHTML = `
-  <img src="${producto[3]}" alt="arroz" width="100%" height="160px"> </img>
+  <img class="imgsProductos" src="${producto[3]}" alt="arroz" width="100%" height="160px"> </img>
   <h1 class="tituloProducto">${producto[0]}</h1>
     <p >Precio : $<span style="font-weight: bold;">${producto[1]}<span></p>
     <p name="stock">Stock : <span style="font-weight: bold;" id="stock-${nroFila}">${producto[2]}<span></p>
-    <input placeholder="Ingrese un numero" type="number" name="inpCantCompra" id="${nroFila}" />
+    <input class="inputProductos" placeholder="Ingrese un numero" type="number" name="inpCantCompra" id="${nroFila}" />
   `;
     // genero card de productos, cada uno como elemento hijo de container
     container.appendChild(contenedorProducto);
